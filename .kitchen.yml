@@ -1,0 +1,20 @@
+---
+driver:
+  name: vagrant
+  network:
+    - ["private_network", {ip: "192.168.33.1"}]
+  customize:
+    memory: 4096
+    cpus: 4
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-12.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[ch_chef_server::default]
+    attributes:
