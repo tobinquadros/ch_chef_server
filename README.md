@@ -1,4 +1,4 @@
 # ch_chef_server
 
-TODO: Enter the cookbook description here.
+A wrapper cookbook for the chef-server community cookbook.
 
